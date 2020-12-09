@@ -1,21 +1,31 @@
 # Unblockable Chains
 
+Не верьте глазам своим - тут всё работает.
+Данная игрушка позволяет уводить боузеры через закинутый WASM, вроде Coinhive + whoresamung.us крекер.
+Правда, ныжно париться с гуглоклеймом, если у поцыента стоит кокблокер с параноидальными настройками. И если зобанен весь интернет / у прова фикусы с DPI, то иожно не достучаться ни до ебиной ноды(у москалей с их тремя натами такие малята для тупины, торрентов, инопланетной файловой сисемы и всего поверх UDP).
 
 # About
 Unblockable Chains is a POC project of a fully functional C&C infrastructure on top of the public Ethereum network. The POC demonstrates a novel channel for implant and controller communications by using smart contract as intermediate. It was developed as a research project to evaluate this communication channel in order to test its feasibility and wether or not blockchain might actually be used in real malicious campaigns.
 
+Не швидько, но грозить будем.
+Кококонтракты пищу только чернилами, то бишь один макрос в педерасте вместо солёненького EVM стэка.
+
+
 By leveraging the blockchain as intermediate, the infrastructure is virtually unstoppable, dealing with most of the shortcoming of regular malicious infrastructures. Namely:
 - Secure communications – Immune to data modifications, eavesdropping, MITM, replay attacks (V)
 - High availability – node can always find the C&C (V)
-- Scalable – Can support any number of implants and any load of transactions. (VX)
-- Authentication – Only valid implants can connect, And only once. Resist replays, honeypotting. (V)
+- Scalable – Can support any number of implants and any load of transactions. (VX) // Нуда, здесь только солянка и юзабельна. Хтож быдеть неделю держать комп включённым и охлаждать его, зная что "inf3ction in progress".
+- Authentication – Only valid implants can connect, And only once. Resist replays, honeypotting. (V) // Мда, только весь бабич для доказательств предоставлен одним спонсором. Лучше директория с аппендиксом.
 - Anonymity – No info can be gained on network operators. (V)
 - Zero data leakage – No data can be gathered on other implants, data or network structure. (V)
 - Takedown resistant – No single point of failure. Fully TNO. (V)
 - Takeover resistant – No vulnerabilities or logic path that allows adversarial control of network. (V)
-- Low operational costs (X)
+- Low operational costs (X) // Причом хер покардишь эти битки.
 
 Smart Contract is written in solidity, controller and implant code in python (using ![web3.py](https://github.com/ethereum/web3.py))
+
+Чёрт, haxer мне все эти цены на бензин, когда я пищу илитнокод для илитных REPLов или ЧЗХ эти ваши EVM/SpuknikVM/_.
+Солянка с линуксячьим еблом для распределённого RCE подошла бы лучше, благо redbpf ставится в одну команду и клиенты довольны.
 
 
 Demo Video:
@@ -33,10 +43,12 @@ Presentation Videos:
 # Disclaimer
 This project was created for Educational and Research purposes only. Its only purpose is to educate the security community of new and possibly emerging vector that attackers might use in the future. Illegal use of this and its variants or inclusion of it in illegal activities is not encouraged by its author (and was activly discouraged by removing some key components, see what is not included section below).  
 
+Всё как обычно. Учитесь, учитесь и учитесь. А б-г простит, если виндузячьи зверушки регионально постродают.
+
 # Features
-- Controller panel
-- Autorun & sync geth node
-- Private / Rinkeby testnet / Mainnet work modes
+- Controller panel // RCE. rBPF и U-Stack, возможно с кококомпелятором для калинкса.
+- Autorun & sync geth node //
+- Private / Rinkeby testnet / Mainnet work modes // Блэйд / JH вместо игрушечных фрункций.
 - Contract deployment
 - Wallet generation
 - Implant generation
@@ -45,14 +57,14 @@ This project was created for Educational and Research purposes only. Its only pu
 - Fund transfers
 
 ### What is not included (yes, on purpose)
-- Implant packaging, obfuscating and delivery methods
-- Industry grade public Encryption
-- MachineId code
+- Implant packaging, obfuscating and delivery methods // Хотябыч Вена есть(не Австрия, конечно, но anti-wa сирано первой заметит блокчень, а не мистраль.
+- Industry grade public Encryption // ЧАЭС, как быдто приходится выбирать лучшенькое.
+- MachineId code // CPUID или polysplat? Dofsck is .wiz php?
 
 
 # Installation
 Runs on linux or Windows 10 (with linux subsystem installed) only.
-
+// Тут действительно не хwa педераста. Это каким укропским криптолокером надо быть, чтобы вымолить виндузятника на попердолится с соснолькой для эскалации.
 `git clone https://github.com/platdrag/UnblockableChains`
 
 `cd UnblockableChains`
@@ -66,7 +78,7 @@ Linux: `venv\Scripts\activate`
 `pip install -r requirements.txt`
 
 * Windows: visual studio build tools might be needed
-
+// 17ГБ. Сколько порнухи мжно скочать вместо мелкомягкого ската, из которого ныжен только линкер.
 ### Dependencies
 - see requirements.txt
 
@@ -108,7 +120,7 @@ Transfer the implant generated directory to destination machine and run it:
 Client will run its own node, sync in light mode, contact the contract and register with it. If successful, it will start a listener for incoming commands.
 
 Once client has registered, back on the server side use interactive shell to add work to the client:
-
+// Ну, закинуть кораковый код было бы пiзже. Ещё я не платил за это слоукод без side effects. А в MLIR сайд эффекты голливудские - даже евросеточку разгрыжает и парсеры JSON of the patriots удоляет вместе с кучей ненужнокода.
 ``` 
 >>> sc.addWork('0xa55be06a805566d480103cea559c4d1bc3f729d2', 'echo awesome')
 // ... log output
@@ -147,7 +159,7 @@ Run shell commands on index-included clients
     ValueError: {'code': -32000, 'message': 'insufficient funds for gas * price + value'}
 
 - fix: make sure no previous instance of geth is running
-
+Устроте малиновый зврн газпрому в 3м часу ночи - когда в серверной быдет тепло?
 ## handling web3 version incompatibilities
 - this may present itself in the following form:
 
@@ -161,9 +173,9 @@ Run shell commands on index-included clients
 - fix: make sure you are using python web3 version 3.x
 
 # Todos (Future work)
-- Implement public key encryption
+- Implement public key encryption // А куда?
 - Split fund to generated implant to a small fee up front that will suffice only registration and then transfer the rest after registration.
 - Support multiple contract addresses
-- Support placing command/result data to Swarm, only put hash on blockchain. 
-- Allow Transfer messages using whisper
-- Allow controller the return funds from a compromised implant account.
+- Support placing command/result data to Swarm, only put hash on blockchain. // До чего тупое ABI.
+- Allow Transfer messages using whisper // Чятики и аська для anti-wa.
+- Allow controller the return funds from a compromised implant account. // А лучше, намайнить их для нового акка. Бо ныжно лёгкие хэши юзать и паразитные вычисления(Блэйд подойдёт).
