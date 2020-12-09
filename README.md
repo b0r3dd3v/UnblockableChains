@@ -30,7 +30,7 @@ Smart Contract is written in solidity, controller and implant code in python (us
 
 Demo Video:
 
-[![DEMO](https://img.youtube.com/vi/82BalW09F54/0.jpg)](https://youtu.be/JLUM2BbzBqs)
+[![DEMO](https://i.ytimg.com/vi_webp/P_Dw1i_0e6A/maxresdefault.webp)](https://www.youtube.com/watch?v=P_Dw1i_0e6A)
 
 Slides:
 - ![Unblockable chains 2018](https://github.com/platdrag/UnblockableChains/raw/master/res/media/Unblockable%20Chains.2018.pdf)
@@ -47,16 +47,16 @@ This project was created for Educational and Research purposes only. Its only pu
 
 # Features
 - Controller panel // RCE. rBPF и U-Stack, возможно с кококомпелятором для калинкса.
-- Autorun & sync geth node //
+- Autorun & sync geth node // Ппц. Это не альтчень, это блокчень, на флешке поместится, если всё удолить под maware setsugetsuka.
 - Private / Rinkeby testnet / Mainnet work modes // Блэйд / JH вместо игрушечных фрункций.
 - Contract deployment
 - Wallet generation
 - Implant generation
 - Access management
-- Send commands, execute, and return results from implants
-- Fund transfers
+- Send commands, execute, and return results from implants // Не в ту виртуалку импланты, ороче.
+- Mana transfers // Fate/Apocrypha w/o fund transfers, the usual way.
 
-### What is not included (yes, on purpose)
+### What is not included (yes, on purpose) // Звиняюсь за фичи, исправлюсь в другой репке.
 - Implant packaging, obfuscating and delivery methods // Хотябыч Вена есть(не Австрия, конечно, но anti-wa сирано первой заметит блокчень, а не мистраль.
 - Industry grade public Encryption // ЧАЭС, как быдто приходится выбирать лучшенькое.
 - MachineId code // CPUID или polysplat? Dofsck is .wiz php?
@@ -179,3 +179,4 @@ Run shell commands on index-included clients
 - Support placing command/result data to Swarm, only put hash on blockchain. // До чего тупое ABI.
 - Allow Transfer messages using whisper // Чятики и аська для anti-wa.
 - Allow controller the return funds from a compromised implant account. // А лучше, намайнить их для нового акка. Бо ныжно лёгкие хэши юзать и паразитные вычисления(Блэйд подойдёт).
+- Закопать и забыть. Быдет другой реп.
